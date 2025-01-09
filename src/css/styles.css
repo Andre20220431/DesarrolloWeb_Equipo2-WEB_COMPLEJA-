@@ -1,0 +1,154 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  /* 1rem = 10px */
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 0rem;
+  background: url(../img/base.webp) no-repeat center center/ cover;
+}
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+/*
+telefono: 480px;
+tablet: 768px;
+desktop: 992px;
+desktopXL: 1200px;
+*/
+
+/* Contenedor */
+
+.contenedor {
+  width: 70rem;
+  min-height: 50rem;
+  background-color: whitesmoke;
+  padding: 4rem;
+  border: 0.5rem solid black;
+  border-radius: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Titulo */
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0rem;
+}
+
+/* Ingresar texto o input */
+
+input {
+  width: 80%;
+  height: 5rem;
+  font-size: 2.5rem;
+  margin: 2rem;
+  padding: 1rem;
+  border: 0.4rem solid #404040;
+  border-radius: 1rem;
+}
+
+/* Boton */
+
+button {
+  width: 15rem;
+  height: 6rem;
+  padding: 1rem;
+  color: whitesmoke;
+  background-color: #1312a8;
+  font-size: 2.2rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Lista de tareas */
+
+#lista-de-tareas {
+  width: 80%;
+  margin-top: 2rem;
+}
+
+/* Tareas individuales */
+
+.tarea {
+  width: 100%;
+  min-height: 7rem;
+  font-size: 2.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  color: whitesmoke;
+  background-color: #407ba6;
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* Tarea completada */
+
+.tarea.completada {
+  text-decoration: line-through;
+  background-color: black;
+  border: none;
+}
+
+.tarea p {
+  max-width: 35rem;
+}
+
+/* Iconos */
+
+i {
+  margin: 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.icono-completar {
+  color: rgb(0, 255, 0);
+}
+
+.icono-eliminar {
+  color: rgb(255, 255, 255);
+}
+
+.icono-completar:hover,
+.icono-eliminar:hover {
+  background-color: rgba(255, 255, 255, 0.523);
+}
+
+/* Añadir esta clase a tu archivo de CSS */
+
+.tarea.completada {
+  text-decoration: line-through;
+  background-color: black;
+  border: none;
+}
+
+.tarea p {
+  max-width: 35rem;
+}
